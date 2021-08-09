@@ -1,7 +1,20 @@
+
 import logo from './logo.svg';
 import './App.css';
+import Axios from 'axios';
 
 function App() {
+
+  window.onload = function() {
+    getPlanet();
+  }
+
+  const getPlanet = () =>{
+    Axios.get("https://swapi.dev/api/planets/1/").then(
+        (response)=>{
+          
+  });
+  }
   return (
     <div className="App">
       <header className="App-header">
